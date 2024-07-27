@@ -1,8 +1,11 @@
-import React, { useState }from 'react';
+import React, { useContext, useState }from 'react';
+import { AuthContext } from '../context/AuthContext';
 import Layout from '../layouts/LayoutAuth';
 import Auth from '../components/Auth';
 
 const Login = () => {
+  const { setSession } = useContext(AuthContext);
+
   const [form, setForm] = useState({
     email: "",
     password: ""
@@ -11,6 +14,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(form);
+    setSession(true);
   }
 
   const handleChange = (e) => {
