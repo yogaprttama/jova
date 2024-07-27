@@ -16,6 +16,185 @@
   <meta property="og:url" content="https://jova.pages.dev/" />
   <link rel="icon" href="https://jova.pages.dev/favicon.ico" type="image/png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <style id="global-styles-inline-css">
+    *,
+    ::before,
+    ::after {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      border-color: #e5e7eb;
+    }
+
+    html {
+      -moz-tab-size: 4;
+      tab-size: 4;
+      font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      color: rgb(51, 51, 51);
+      line-height: 1.5;
+    }
+
+    a {
+      color: rgb(22, 119, 255);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: rgb(51, 51, 51);
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-feature-settings: inherit;
+      font-variation-settings: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+      padding: 0;
+    }
+
+    input[type="text"]:focus,
+    input[type="search"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus,
+    textarea:focus {
+      outline: 2px solid transparent;
+      outline-offset: -2px;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    [type='button'],
+    [type='reset'],
+    [type='submit'] {
+      -webkit-appearance: button;
+      background-color: transparent;
+      background-image: none;
+    }
+
+    button,
+    [role="button"] {
+      cursor: pointer;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      opacity: 1;
+      color: #9ca3af;
+    }
+
+    img,
+    svg {
+      display: block;
+      vertical-align: middle;
+    }
+
+    img,
+    video {
+      max-width: 100%;
+      height: auto;
+    }
+
+    [hidden] {
+      display: none;
+    }
+
+    *,
+    ::before,
+    ::after {
+      --default-border-radius: 0.25rem;
+      --default-border-color: rgb(219, 219, 219);
+      --default-border-secondary-color: rgb(168, 168, 168);
+      --default-text-color: rgb(51, 51, 51);
+    }
+
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .icon-sm {
+      height: 1.25rem;
+      width: 1.25rem;
+      color: rgb(156, 163, 175);
+    }
+
+    .icon-lg {
+      height: 1.5rem;
+      width: 1.5rem;
+      color: rgb(156, 163, 175);
+    }
+
+    .wrap {
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 1.25rem;
+      padding-left: 1.25rem;
+      max-width: 64rem;
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .form-group {
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-control  {
+      border-width: 0;
+      border-radius: var(--default-border-radius);
+      background-color: rgb(250, 250, 250);
+      color: rgb(17, 24, 39);
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      box-shadow: inset 0 0 0 0 rgb(255, 255, 255), inset 0 0 0 1px rgb(219, 219, 219), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    .form-control:focus {
+      background-color: rgb(255, 255, 255);
+      box-shadow: inset 0 0 0 0 rgb(255, 255, 255), inset 0 0 0 1px rgb(168, 168, 168), 0 0 0 0 rgb(255, 255, 255);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: rgb(17, 24, 39);
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      font-weight: 500;
+    }
+
+    .btn {
+      border-radius: var(--default-border-radius);
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-weight: 500;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  </style>
 </head>
 <body>
   <noscript>
