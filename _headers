@@ -1,0 +1,6 @@
+https://jova.pages.dev/*
+  ! Access-Control-Allow-Origin
+  Permissions-Policy: geolocation=self
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Frame-Options: SAMEORIGIN
+  X-Xss-Protection: 1; mode=block
