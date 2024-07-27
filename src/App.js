@@ -4,7 +4,7 @@ import Root from './Root';
 import Home from './pages/Home';
 
 // lazy
-const Login = lazy(() => import('./pages/Login'));
+const NewJobs = lazy(() => import('./pages/NewJobs'));
 
 const App = () => {
   return(
@@ -13,10 +13,10 @@ const App = () => {
         <Route path="/" element={<Root />}>
           <Route index element={<Home />} />
           <Route
-            path="login"
+            path="jobs/new"
             element={
               <Suspense fallback={<div>Loading...</div>}>
-                <Login />
+                <NewJobs />
               </Suspense>
             }
           />

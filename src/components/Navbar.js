@@ -57,7 +57,7 @@ const Navbar = () => {
       <HeaderContent className="wrap">
         <Title>Jova</Title>
         <Nav>
-          <NavLink to="/" className="btn">Home</NavLink>
+          <NavLink to="/jobs/new" className="btn">Post a job free</NavLink>
         </Nav>
       </HeaderContent>
     </Header>
