@@ -4,10 +4,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: process.env.NODE_ENV || 'production',
   entry: {
-    application: './src/index.js'
+    app: './src/index.js'
   },
   output: {
-    filename: '[name]-[fullhash].js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'build'),
   },
   devServer: {
@@ -69,6 +69,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'public', 'index.html'),
+      inject: false,
     }),
   ],
 }
