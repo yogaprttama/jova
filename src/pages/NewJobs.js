@@ -1,14 +1,20 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
+import { supabase } from '../lib/supabaseClient';
 import Login from './Login';
 
 const NewJobs = () => {
   const { session, setSession } = useContext(AuthContext);
 
+  const handleLogout = async () => {
+    const { error } = await supabase.auth.signOut();
+    setSession(null);
+  }
+
   return(
-    <div>
-      { session ? <button type="button" onClick={() => setSession(null)}>Log out</button> : <Login /> }
-    </div>
+    <>
+      { session ? <button type="button" onClick={handleLogout}>Log out</button> : <Login /> }
+    </>
   );
 }
 

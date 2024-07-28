@@ -54,7 +54,9 @@ const Auth = (props) => {
           <Toggle type="button" onClick={onToggleClick}>{ toggle ? "Hide" : "Show" }</Toggle>
         </div>
       </div>
-      <ButtonSubmit type="submit" className="btn">{props.submitText}</ButtonSubmit>
+      <ButtonSubmit type="submit" className="btn" disabled={props.loading}>
+        { props.loading ? "Loading.." : props.submitText }
+      </ButtonSubmit>
     </Form>
   );
 }
