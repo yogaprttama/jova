@@ -1,5 +1,4 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: process.env.NODE_ENV || 'production',
@@ -8,7 +7,7 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'build/js'),
   },
   devServer: {
     compress: true,
@@ -66,10 +65,5 @@ module.exports = {
       }
     }
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'public', 'index.html'),
-      inject: false,
-    }),
-  ],
+  plugins: [],
 }
